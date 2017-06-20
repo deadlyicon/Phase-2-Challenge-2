@@ -1,22 +1,33 @@
 var assert = require('chai').assert;
 var functions = require('../functions');
 
-//### Show a weekday
-
-describe ('functions', function() {
-  it('Should return Friday', function() {
-    assert.equal(functions.weekday(2017, 6, 16), 'Friday');
+describe('functions', function() {
+  //### Show a weekday
+  describe('weekday', function() {
+    it('Should return Friday', function() {
+      assert.equal(functions.weekday(2017, 6, 16), 'Friday');
+    });
+    it('Should return Monday', function() {
+      assert.equal(functions.weekday(2017, 6, 19), 'Monday');
+    });
+    it('Should return undefined', function() {
+      assert.equal(functions.weekday(30, 130, 4120), undefined);
+    });
   });
-  it('Should return Monday', function() {
-    assert.equal(functions.weekday(2017, 6, 19), 'Monday');
+  //### Get a snippet from text
+  describe('snippet', function() {
+    it('Should return The world is', function() {
+      assert.equal(functions.snippet('The world is quiet here', 12), 'The world is');
+    });
+    it('Should return The wor', function() {
+      assert.equal(functions.snippet('The world is quiet here', 7), 'The wor');
+    });
+    it('Should return undefined', function() {
+      assert.equal(functions.snippet('The world is quiet here', sjif), not defined);
+    });
   });
-  it('Should return failing', function() {
-    assert.equal(functions.weekday(a, b, c), 'failing');
-  })
+  // ### Number of properties
+  describe()
+  // ### Filter between
+  describe()
 });
-
-//### Get a snippet from text
-
-// ### Number of properties
-
-// ### Filter between

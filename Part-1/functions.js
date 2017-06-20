@@ -2,7 +2,6 @@
 function weekday(year, month, day) {
   var date = new Date(year + ", " + month + ", " + day)
   var number = date.getDay();
-  console.log(number);
   if (number === 1) {
     return "Monday";
   } else if (number === 2){
@@ -21,16 +20,25 @@ function weekday(year, month, day) {
 }
 
 // ### Get a snippet from text
+function snippet(text, maxlength) {
+  var arrayText = text.split("")
+  var removeText = arrayText.splice(maxlength);
+  var becomeText = arrayText.join("");
+  return becomeText;
+}
 
 // ### Number of properties
+function numProps(obj) {
+  
+}
 
 // ### Filter between
+function filterBetween(array, min, max) {
 
-function helloWorld () {
-  return "hello world";
 }
 
 module.exports = {
   weekday,
-  
+  snippet,
+
 }
