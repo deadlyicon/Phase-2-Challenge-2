@@ -1,6 +1,5 @@
 // ### Show a weekday
-function weekday(year, month, day) {
-  var date = new Date(year + ", " + month + ", " + day)
+function weekday(date) {
   var number = date.getDay();
   if (number === 1) {
     return "Monday";
@@ -21,24 +20,32 @@ function weekday(year, month, day) {
 
 // ### Get a snippet from text
 function snippet(text, maxlength) {
-  var arrayText = text.split("")
+  var arrayText = text.split("");
   var removeText = arrayText.splice(maxlength);
   var becomeText = arrayText.join("");
-  return becomeText;
+  if (arrayText.length < maxlength) {
+    return becomeText;
+  } else {
+    return becomeText + "...";
+}
 }
 
 // ### Number of properties
 function numProps(obj) {
-  
+  return Object.keys(obj).length;
 }
 
 // ### Filter between
 function filterBetween(array, min, max) {
-
+  var filtered = array.filter(function(number){
+    return number >= min && number <= max;
+  })
+  return filtered;
 }
 
 module.exports = {
   weekday,
   snippet,
-
+  numProps,
+  filterBetween
 }
