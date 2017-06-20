@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+}
+
+button {
+  font-size: 12px;
+}
+
+.navbar {
+  position: fixed;
+  height: 3vh;
+  width: 100%;
+  border: 1px solid black;
+  overflow:hidden;
+  top: 0;
+  background-color: white;
+}
+
+.cartButton {
+  float: right;
+}
+
+.sidebar {
+  position: fixed;
+  height: 96vh;
+  width: 30vh;
+  border: 1px solid black;
+  line-height: 30px;
+  margin-top: -6.75vh;
+}
+
+.sidebarTitle {
+  margin: 0px;
+  background-color: gray;
+  border: 1px solid black;
+  line-height: 20px;
+}
+
+.page {
+  margin-top: 10vh;
+  margin-left: 36vh;
+  line-height: 100px;
+}
+
+.pageTitle {
+  font-size: 60px;
+  line-height: 20px;
+}
+
+.sectionTitle {
+  font-style: italic;
+  text-align: left;
+}

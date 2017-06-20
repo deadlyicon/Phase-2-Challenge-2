@@ -1,0 +1,15 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Part 1 of Phase 2 Challenge",
+  "main": "functions.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}

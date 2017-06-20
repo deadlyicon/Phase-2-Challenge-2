@@ -1,27 +1,44 @@
-### Show a weekday
+// ### Show a weekday
 function weekday(year, month, day) {
-  var number = getDay(year, month, day);
-  if (number = 1) {
+  var date = new Date(year + ", " + month + ", " + day)
+  var number = date.getDay();
+  if (number === 1) {
     return "Monday";
-  } else if (number = 2){
+  } else if (number === 2){
     return "Tuesday";
-  } else if (number = 3){
+  } else if (number === 3){
     return "Wednesday";
-  } else if (number = 4){
+  } else if (number === 4){
     return "Thursday";
-  } else if (number = 5){
+  } else if (number === 5){
     return "Friday";
-  } else if (number = 6){
+  } else if (number === 6){
     return "Saturday";
-  } else if (number = 7){
+  } else if (number === 7){
     return "Sunday";
   }
 }
 
-weekday(2017, 6, 19);
+// ### Get a snippet from text
+function snippet(text, maxlength) {
+  var arrayText = text.split("")
+  var removeText = arrayText.splice(maxlength);
+  var becomeText = arrayText.join("");
+  return becomeText;
+}
 
-### Get a snippet from text
+// ### Number of properties
+function numProps(obj) {
+  
+}
 
-### Number of properties
+// ### Filter between
+function filterBetween(array, min, max) {
 
-### Filter between
+}
+
+module.exports = {
+  weekday,
+  snippet,
+
+}
