@@ -1,5 +1,6 @@
 var assert = require('chai').assert;
 var functions = require('../functions');
+var chai = require('chai');
 
 describe('functions', function() {
   //### Show a weekday
@@ -51,9 +52,20 @@ describe('functions', function() {
   });
   // ### Filter between
   describe('filterBetween', function() {
-    it('Should return [2,3,4]', function() {
-      var array = [1,2,3,4,5]
-      assert.equal(functions.filterBetween(array, 2, 4), [2,3,4])
-    })
-  })
+    it('Should return 3', function() {
+      var array = [1,2,3,4,5];
+      var newArray = functions.filterBetween(array, 2, 4);
+      assert.equal(newArray.length, 3);
+    });
+    it('Should return 5', function() {
+      var array = [1,2,3,4,5,6,7,8];
+      var newArray = functions.filterBetween(array, 3, 7);
+      assert.equal(newArray.length, 5);
+    });
+    it('Should return 0', function() {
+      var array = ["hello"];
+      var newArray = functions.filterBetween(array, 2, 4);
+      assert.equal(newArray.length, 0);
+    });
+  });
 });
