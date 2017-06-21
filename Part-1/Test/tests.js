@@ -13,7 +13,7 @@ describe('functions', function() {
       assert.equal(functions.weekday(date), 'Monday');
     });
     it('Should return undefined', function() {
-      var date=new Date("30, 130, 4120");
+      var date=new Date("hello");
       assert.equal(functions.weekday(date), undefined);
     });
   });
@@ -24,6 +24,9 @@ describe('functions', function() {
     });
     it('Should return The world is quiet here', function() {
       assert.equal(functions.snippet('The world is quiet here', 50), 'The world is quiet here');
+    });
+    it('Should return ...', function() {
+      assert.equal(functions.snippet('hello', "three"), '...');
     });
   });
   // ### Number of properties
@@ -40,6 +43,10 @@ describe('functions', function() {
     it('Should return 0', function() {
       var object = {}
       assert.equal(functions.numProps(object), 0);
+    });
+    it('Should return 0', function() {
+      var object = {"x":"y"};
+      assert.equal(functions.numProps(object), 1);
     });
   });
   // ### Filter between

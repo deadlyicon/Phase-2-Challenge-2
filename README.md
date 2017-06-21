@@ -2,14 +2,14 @@
 
 - [X] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
 - [X] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
-- [ ] __20:__ Git history shows frequent commits.
+- [X] __20:__ Git history shows frequent commits.
 
 ## Part 1: Write tests and solutions for these functions
 ### Show a weekday
 #### Requirements
 
 - [X] __10:__ A test using expected/valid inputs for the `weekday()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `weekday()` function is written in `tests.js`.
+- [X] __10:__ A test using unexpected/invalid inputs for the `weekday()` function is written in `tests.js`.
 - [X] __30:__ Correct implementation of the `weekday()` is defined in `functions.js`.
 - [X] __10:__ Tests for `weekday()` are passing.
 
@@ -17,17 +17,17 @@
 #### Requirements
 
 - [X] __10:__ A test using expected/valid inputs for the `snippet()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `snippet()` function is written in `tests.js`.
+- [X] __10:__ A test using unexpected/invalid inputs for the `snippet()` function is written in `tests.js`.
 - [X] __30:__ Correct implementation of the `snippet()` is defined in `functions.js`.
 - [X] __10:__ Tests for `snippet()` are passing.
 
 ### Number of properties
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `numProps()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `numProps()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `numProps()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `numProps()` are passing.
+- [X] __10:__ A test using expected/valid inputs for the `numProps()` function is written in `tests.js`.
+- [X] __10:__ A test using unexpected/invalid inputs for the `numProps()` function is written in `tests.js`.
+- [X] __30:__ Correct implementation of the `numProps()` is defined in `functions.js`.
+- [X] __10:__ Tests for `numProps()` are passing.
 
 ### Filter between
 #### Requirements
@@ -40,8 +40,8 @@
 ## Part 2: Extract data from JSON file
 #### Requirements
 
-- [ ] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
-- [ ] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
+- [X] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
+- [X] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
 
 ## Part 3: HTML layout for grocery store
 ### Requirements
