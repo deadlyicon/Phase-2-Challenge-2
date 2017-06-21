@@ -32,10 +32,10 @@
 ### Filter between
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `filterBetween()` are passing.
+- [X] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
+- [X] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
+- [X] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
+- [X] __10:__ Tests for `filterBetween()` are passing.
 
 ## Part 2: Extract data from JSON file
 #### Requirements
